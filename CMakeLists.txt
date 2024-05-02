@@ -10,8 +10,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage")
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib)
+
 add_subdirectory(src)
 add_subdirectory(tst)
+add_subdirectory(lib)
 
 enable_testing()
 
