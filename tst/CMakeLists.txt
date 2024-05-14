@@ -1,7 +1,7 @@
 include(FetchContent)
 FetchContent_Declare(
   googletest
-  URL https://github.com/google/googletest/archive/release-1.11.0.zip)
+  URL https://github.com/google/googletest/archive/release-1.12.0.zip)
 FetchContent_MakeAvailable(googletest)
 
 file(GLOB_RECURSE SRC_FILES "${CMAKE_SOURCE_DIR}/src/modul1/*.cpp"
